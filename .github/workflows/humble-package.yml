@@ -20,7 +20,8 @@ jobs:
       # Clone this repo
       - name: Checkout ${PACKAGE_NAME}
         uses: actions/checkout@v3
-        path: ros-workspace/src/${PACKAGE_NAME}
+        with:
+          path: ros-workspace/src/${PACKAGE_NAME}
 
       # Runs action and builds package
       - name: Cross-compile package ${PACKAGE_NAME}
