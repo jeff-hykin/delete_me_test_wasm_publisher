@@ -18,15 +18,15 @@ jobs:
         run: mkdir -p ros-workspace/src
 
       # Clone this repo
-      - name: Checkout ${PACKAGE_NAME}
+      - name: Checkout $PACKAGE_NAME
         uses: actions/checkout@v3
         with:
-          path: ros-workspace/src/${PACKAGE_NAME}
+          path: ros-workspace/src/$PACKAGE_NAME
 
       # Runs action and builds package
-      - name: Cross-compile package ${PACKAGE_NAME}
+      - name: Cross-compile package $PACKAGE_NAME
         uses: ihuicatl/ros2wasm-builder@0.1.0
         with:
-          package: ${PACKAGE_NAME}
+          package: $PACKAGE_NAME
           ros_distro: 'humble'
           debug_mode: false
