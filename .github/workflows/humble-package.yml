@@ -15,7 +15,10 @@ jobs:
     steps:
       - name: Create ROS 2 workspace
         shell: bash -eux {0}
-        run: mkdir -p ros-workspace/src
+        run: |
+          mkdir -p ros-workspace/src
+          echo 'VERIFY PACKAGE:'
+          echo $PACKAGE_NAME
 
       # Clone this repo
       - name: Checkout $PACKAGE_NAME
