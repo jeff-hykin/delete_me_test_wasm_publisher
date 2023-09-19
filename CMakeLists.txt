@@ -35,7 +35,7 @@ target_link_options(talker
   PUBLIC "SHELL: -s ALLOW_MEMORY_GROWTH=1"
   PUBLIC "SHELL: -s DEMANGLE_SUPPORT=1"
   PUBLIC "SHELL: -s ASSERTIONS=1"
-  PUBLIC "SHELL: -s EXIT_RUNTIME=1" 
+  PUBLIC "SHELL: -s EXIT_RUNTIME=1"
   PUBLIC "SHELL: -s WASM=1"
   PUBLIC "SHELL: -s USE_PTHREADS=0"
   PUBLIC "SHELL: -s TOTAL_STACK=16mb"
@@ -44,7 +44,7 @@ target_link_options(talker
 )
 
 target_compile_options(listener
-  PUBLIC "SHELL: -fexceptions" 
+  PUBLIC "SHELL: -fexceptions"
 )
 
 target_link_options(listener
@@ -55,7 +55,7 @@ target_link_options(listener
   PUBLIC "SHELL: -s ASYNCIFY=1"
   PUBLIC "SHELL: -s DEMANGLE_SUPPORT=1"
   PUBLIC "SHELL: -s ASSERTIONS=1"
-  PUBLIC "SHELL: -s EXIT_RUNTIME=1" 
+  PUBLIC "SHELL: -s EXIT_RUNTIME=1"
   PUBLIC "SHELL: -s WASM=1"
   PUBLIC "SHELL: -s USE_PTHREADS=0"
   PUBLIC "SHELL: -s TOTAL_STACK=16mb"
@@ -64,7 +64,7 @@ target_link_options(listener
 )
 
 target_compile_options(server
-  PUBLIC "SHELL: -fexceptions" 
+  PUBLIC "SHELL: -fexceptions"
 )
 
 target_link_options(server
@@ -75,7 +75,7 @@ target_link_options(server
   PUBLIC "SHELL: -s ASYNCIFY=1"
   PUBLIC "SHELL: -s DEMANGLE_SUPPORT=1"
   PUBLIC "SHELL: -s ASSERTIONS=1"
-  PUBLIC "SHELL: -s EXIT_RUNTIME=1" 
+  PUBLIC "SHELL: -s EXIT_RUNTIME=1"
   PUBLIC "SHELL: -s WASM=1"
   PUBLIC "SHELL: -s USE_PTHREADS=0"
   PUBLIC "SHELL: -s TOTAL_STACK=16mb"
@@ -84,7 +84,7 @@ target_link_options(server
 )
 
 target_compile_options(client
-  PUBLIC "SHELL: -fexceptions" 
+  PUBLIC "SHELL: -fexceptions"
 )
 
 target_link_options(client
@@ -95,7 +95,7 @@ target_link_options(client
   PUBLIC "SHELL: -s ASYNCIFY=1"
   PUBLIC "SHELL: -s DEMANGLE_SUPPORT=1"
   PUBLIC "SHELL: -s ASSERTIONS=1"
-  PUBLIC "SHELL: -s EXIT_RUNTIME=1" 
+  PUBLIC "SHELL: -s EXIT_RUNTIME=1"
   PUBLIC "SHELL: -s WASM=1"
   PUBLIC "SHELL: -s USE_PTHREADS=0"
   PUBLIC "SHELL: -s TOTAL_STACK=16mb"
