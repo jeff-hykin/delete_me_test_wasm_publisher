@@ -13,17 +13,8 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 
-add_executable(talker src/test_publisher.cpp)
+add_executable(talker src/publisher.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
-
-add_executable(listener src/test_subscriber.cpp)
-ament_target_dependencies(listener rclcpp std_msgs)
-
-add_executable(server src/test_service_server.cpp)
-ament_target_dependencies(server rclcpp example_interfaces)
-
-add_executable(client src/test_service_client.cpp)
-ament_target_dependencies(client rclcpp example_interfaces)
 
 add_compile_options("SHELL:-s USE_PTHREADS")
 
@@ -33,7 +24,7 @@ add_link_options("SHELL:-s USE_PTHREADS")
 set(CMAKE_EXECUTABLE_SUFFIX ".html")
 
 target_compile_options(talker
-  PUBLIC "SHELL: -fexceptions" 
+  PUBLIC "SHELL: -fexceptions"
 )
 
 target_link_options(talker
