@@ -9,7 +9,7 @@ self.onmessage = function(event) {
   msgMap[event.data.topic] = {
     message: event.data.message.replaceAll(", ", "\n"),
     isStale: false
-  };  
+  };
 }
 
 Module["registerParticipant"] = function registerParticipant(topic_name, role)

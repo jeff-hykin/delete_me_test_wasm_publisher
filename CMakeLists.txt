@@ -29,7 +29,7 @@ target_compile_options(talker
 
 target_link_options(talker
   PUBLIC "SHELL: -lembind"
-  PUBLIC "SHELL: --pre-js ${CMAKE_SOURCE_DIR}/pre.js"
+  PUBLIC "SHELL: --pre-js ${CMAKE_SOURCE_DIR}/src/pre.js"
   PUBLIC "SHELL: -fexceptions"
   PUBLIC "SHELL: -s ASYNCIFY=1"
   PUBLIC "SHELL: -s ALLOW_MEMORY_GROWTH=1"
