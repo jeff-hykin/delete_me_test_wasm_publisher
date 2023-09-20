@@ -9,9 +9,6 @@ jobs:
   build-package:
     runs-on: ubuntu-latest
 
-    env:
-      PACKAGE_NAME: wasm_publisher
-
     steps:
       - name: Create ROS 2 workspace
         shell: bash -eux {0}
@@ -21,12 +18,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          path: ros-workspace/src/$PACKAGE_NAME
+          path: ros-workspace/src/wasm_publisher
 
       # Runs action and builds package
       - name: Cross-compile package
         uses: ihuicatl/ros2wasm-builder@0.1.2
         with:
-          package: $PACKAGE_NAME
+          package: wasm_publisher
           ros_distro: 'humble'
           debug_mode: false
