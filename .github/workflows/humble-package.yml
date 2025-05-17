@@ -23,7 +23,7 @@ jobs:
       
       # Runs action and builds package
       - name: Cross-compile package
-        uses: jeff-hykin/ros2wasm-builder@1.6
+        uses: aggie-tool-kit/ros2wasm-builder-atk@1.0
         with:
           package: wasm_publisher
           ros_distro: 'humble'
