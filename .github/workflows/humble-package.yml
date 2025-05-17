@@ -33,7 +33,7 @@ jobs:
 
       # Runs action and builds package
       - name: Cross-compile package
-        uses: jeff-hykin/ros2wasm-builder@1.4
+        uses: jeff-hykin/ros2wasm-builder@1.6
         with:
           package: wasm_publisher
           ros_distro: 'humble'
